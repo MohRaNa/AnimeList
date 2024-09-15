@@ -1,4 +1,3 @@
-import React from 'react';
 import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import LoginScreen from '../components/login/loginScreen.jsx';
 import ListAnime from './listAnime.jsx';
@@ -12,4 +11,4 @@ export const MainLogin= () => {
             </Routes>
         </Router>
     );
-};
+}

@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+// import { useUsername } from "../../components/hooks/useUsername.jsx";
 
 const LoginScreen = () => {
 
+    // const { username, handleChange } = useUsername();
     const [formUser, setFormUser] = useState({username: "", password: ""});
     const predefinedUser = {username: "M", password: "1"}
     
@@ -10,7 +12,8 @@ const LoginScreen = () => {
 
     const handleLogin = () => {
         if (formUser.username === predefinedUser.username && formUser.password === predefinedUser.password) {
-            navigate("/listAnime");
+            navigate("/listAnime")
+            ;
         }
         else{
             console.log(formUser.email);
